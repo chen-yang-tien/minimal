@@ -1,0 +1,23 @@
+var i = 2;
+var j = 0;
+var n = 0;
+var b = 0;
+
+while i <= 10000 {
+    n = 2;
+    b = 1;
+    while n * n <= i && b {
+        if i % n == 0 {
+            b = 0;
+        }
+        n = n + 1;
+    }
+    if i / 10 > j / 10 {
+        println;
+    }
+    if b {
+        print i;
+    }
+    j = i;
+    i = i + 1;
+}

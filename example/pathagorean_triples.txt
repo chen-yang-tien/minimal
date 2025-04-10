@@ -1,0 +1,21 @@
+var c = 3;
+var a = 0;
+var b = 0;
+
+while c <= 70 {
+    a = 1;
+    while a <= c - 2 {
+        b = a + 1;
+        while b <= c - 1 {
+            if a * a + b * b == c * c {
+                print a;
+                print b;
+                print c;
+                println;
+            }
+            b = b + 1;
+        }
+        a = a + 1;
+    }
+    c = c + 1;
+}
